@@ -7,6 +7,7 @@ outOfGuesses = False
 while guess != secret_word and not outOfGuesses:
   if guessNumber < limitOfGuess:
     guess = input("Enter your name: ")
+    guessNumber += 1
   else:
     outOfGuesses = True
 
@@ -14,5 +15,4 @@ if outOfGuesses:
   print("you lost")
 else:
   print("win!")
-
 
